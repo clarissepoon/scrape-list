@@ -7,7 +7,9 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "start": "cypress run",
-    "format": "prettier --write \"./**/*.{js,jsx}\""
+    "prettier_file": "prettier --write \"./**/*.{js,jsx}\"",
+    "gitSync": "git fetch --all && git pull",
+    "gitUpdate": "npm run gitSync && npm run prettier_file && git add . && git commit -m\"update, \" && git push"
   },
   "keywords": [],
   "author": "",
