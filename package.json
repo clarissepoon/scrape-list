@@ -6,13 +6,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "start": "cypress run"
+    "start": "cypress run",
+    "format": "prettier --write \"./**/*.{js,jsx}\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cypress": "^15.4.0"
-  },
+    "cypress": "^15.4.0",
+    "prettier": "^3.6.2"
+  }
 }
